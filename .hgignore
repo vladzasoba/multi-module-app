@@ -1,0 +1,6 @@
+/target$
+.idea/
+.mnv/
+multi-module-app.iml
+mvnw.cmd
+.gitignore
