@@ -4,3 +4,10 @@
 multi-module-app.iml
 mvnw.cmd
 .gitignore
+.git
+desktop.ini
+mvnw
+/target$
+.hgrc
+SCHEMA
+SCHEMAHR.uml

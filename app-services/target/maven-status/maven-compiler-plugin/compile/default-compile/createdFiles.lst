@@ -1,1 +1,10 @@
+caching\CachingStrategy.class
 service\AppService.class
+caching\Cacheable.class
+caching\CacheFactory$1.class
+service\AppServiceImpl.class
+caching\LRUCache$Node.class
+caching\LRUCache.class
+service\CacheableService.class
+caching\Cache.class
+caching\CacheFactory.class
