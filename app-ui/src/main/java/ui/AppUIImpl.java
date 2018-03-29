@@ -2,6 +2,8 @@ package ui;
 
 import dao.AppDaoImpl;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import service.AppService;
 import service.AppServiceImpl;
 
@@ -19,14 +21,10 @@ public class AppUIImpl implements AppUI {
         }
         logger.info("Input argument: " +  args[0]);
 
-        AppService appService = new AppServiceImpl();
-        appService.setDao(new AppDaoImpl());
-
-        AppService cacheableService = new CacheableService(appService);
-
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring/spring-config.xml");
+        AppService appS = (AppService) applicationContext.getBean("");
         try {
-            //String dayOfWeek = appService.getDayOfWeek(args[0]);
-            String dayOfWeek = cacheableService.getDayOfWeek(args[0]);
+            String dayOfWeek = appS.getDayOfWeek(args[0]);
             System.out.println(dayOfWeek);
         } catch (ParseException e) {
             logger.error("Date string isn't valid. Usage: dd.MM.YYYY\n Exception caught: ", e);

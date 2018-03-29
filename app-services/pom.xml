@@ -4,15 +4,15 @@
   <groupId>com.vladzasoba</groupId>
   <artifactId>app-services</artifactId>
   <packaging>jar</packaging>
-  <version>${parent.version}</version>
+  <version>${project.parent.version}</version>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>
@@ -37,6 +37,21 @@
       <dependency>
           <groupId>org.mockito</groupId>
           <artifactId>mockito-core</artifactId>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-core</artifactId>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-beans</artifactId>
       </dependency>
   </dependencies>
 </project>

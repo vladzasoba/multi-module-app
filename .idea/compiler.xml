@@ -12,8 +12,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="app-customized-service" target="1.8" />
       <module name="app-dao" target="1.5" />
-      <module name="app-services" target="1.7" />
+      <module name="app-services" target="1.8" />
       <module name="app-ui" target="1.5" />
       <module name="multi-module-app" target="1.5" />
     </bytecodeTargetLevel>
