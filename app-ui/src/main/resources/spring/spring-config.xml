@@ -4,9 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <import resource="spring-config-service.xml"/>
+    <import resource="spring-config-customservice.xml"/>
 
-    <bean name="cacheableService" class="service.CacheableService">
-        <constructor-arg ref="appService"/>
+    <bean class="java.lang.Class" name="appServiceType" factory-method="forName">
+        <constructor-arg value="service.AppService"/>
+    </bean>
+
+    <bean name="cacheProxy" class="caching.CacheableProxy">
+        <constructor-arg ref="customService"/>
+        <constructor-arg ref="appServiceType"/>
     </bean>
 
 </beans>

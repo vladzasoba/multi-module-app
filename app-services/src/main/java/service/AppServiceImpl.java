@@ -1,19 +1,19 @@
 package service;
 
 import caching.Cacheable;
-import caching.CachingStrategy;
+import caching.CacheableMethod;
+import caching.cache.CacheStrategy;
 import dao.AppDao;
-import org.springframework.cglib.core.internal.LoadingCache;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class AppServiceImpl implements AppService {
+public class AppServiceImpl implements AppService, Cacheable {
     private AppDao dao;
 
-    @Cacheable(strategy = CachingStrategy.LRU, size = 5)
+    @CacheableMethod(strategy = CacheStrategy.LRU, size = 12)
     public String getDayOfWeek(String dateString) throws ParseException {
         Locale.setDefault(new Locale("en_US"));
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
