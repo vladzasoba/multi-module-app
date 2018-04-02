@@ -4,49 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/.gitignore" line="8" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e9887af-333d-4be7-b132-0e4be434444f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app-dao/src/main/resources/spring/spring-config-dao.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app-services/src/main/resources/spring/spring-config-service.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app-ui/src/main/resources/spring/spring-config.xml" />
-      <change beforePath="$PROJECT_DIR$/.hgignore" afterPath="$PROJECT_DIR$/.hgignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app-dao/app-dao.iml" afterPath="$PROJECT_DIR$/app-dao/app-dao.iml" />
-      <change beforePath="$PROJECT_DIR$/app-dao/pom.xml" afterPath="$PROJECT_DIR$/app-dao/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/app-dao/target/app-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/app-dao/target/app-dao-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/app-dao/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/app-dao/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/app-dao/target/surefire-reports/TEST-dao.AppDaoTest.xml" afterPath="$PROJECT_DIR$/app-dao/target/surefire-reports/TEST-dao.AppDaoTest.xml" />
-      <change beforePath="$PROJECT_DIR$/app-dao/target/surefire-reports/dao.AppDaoTest.txt" afterPath="$PROJECT_DIR$/app-dao/target/surefire-reports/dao.AppDaoTest.txt" />
-      <change beforePath="$PROJECT_DIR$/app-services/app-services.iml" afterPath="$PROJECT_DIR$/app-services/app-services.iml" />
-      <change beforePath="$PROJECT_DIR$/app-services/pom.xml" afterPath="$PROJECT_DIR$/app-services/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/app-services/src/main/java/service/AppServiceImpl.java" afterPath="$PROJECT_DIR$/app-services/src/main/java/service/AppServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/app-services-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/app-services/target/app-services-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/caching/Cache.class" afterPath="$PROJECT_DIR$/app-services/target/classes/caching/Cache.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/caching/CacheFactory$1.class" afterPath="$PROJECT_DIR$/app-services/target/classes/caching/CacheFactory$1.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/caching/CacheFactory.class" afterPath="$PROJECT_DIR$/app-services/target/classes/caching/CacheFactory.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/caching/Cacheable.class" afterPath="$PROJECT_DIR$/app-services/target/classes/caching/Cacheable.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/caching/CachingStrategy.class" afterPath="$PROJECT_DIR$/app-services/target/classes/caching/CachingStrategy.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/caching/LRUCache$Node.class" afterPath="$PROJECT_DIR$/app-services/target/classes/caching/LRUCache$Node.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/caching/LRUCache.class" afterPath="$PROJECT_DIR$/app-services/target/classes/caching/LRUCache.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/service/AppService.class" afterPath="$PROJECT_DIR$/app-services/target/classes/service/AppService.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/service/AppServiceImpl.class" afterPath="$PROJECT_DIR$/app-services/target/classes/service/AppServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/classes/service/CacheableService.class" afterPath="$PROJECT_DIR$/app-services/target/classes/service/CacheableService.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/app-services/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/surefire-reports/TEST-service.AppServiceTest.xml" afterPath="$PROJECT_DIR$/app-services/target/surefire-reports/TEST-service.AppServiceTest.xml" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/surefire-reports/TEST-service.CacheableServiceTest.xml" afterPath="$PROJECT_DIR$/app-services/target/surefire-reports/TEST-service.CacheableServiceTest.xml" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/surefire-reports/service.AppServiceTest.txt" afterPath="$PROJECT_DIR$/app-services/target/surefire-reports/service.AppServiceTest.txt" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/surefire-reports/service.CacheableServiceTest.txt" afterPath="$PROJECT_DIR$/app-services/target/surefire-reports/service.CacheableServiceTest.txt" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/test-classes/service/AppServiceTest.class" afterPath="$PROJECT_DIR$/app-services/target/test-classes/service/AppServiceTest.class" />
-      <change beforePath="$PROJECT_DIR$/app-services/target/test-classes/service/CacheableServiceTest.class" afterPath="$PROJECT_DIR$/app-services/target/test-classes/service/CacheableServiceTest.class" />
-      <change beforePath="$PROJECT_DIR$/app-ui/app-ui.iml" afterPath="$PROJECT_DIR$/app-ui/app-ui.iml" />
-      <change beforePath="$PROJECT_DIR$/app-ui/pom.xml" afterPath="$PROJECT_DIR$/app-ui/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/app-ui/src/main/java/ui/AppUIImpl.java" afterPath="$PROJECT_DIR$/app-ui/src/main/java/ui/AppUIImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app-ui/target/app-ui-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/app-ui/target/app-ui-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/app-ui/target/classes/ui/AppUIImpl.class" afterPath="$PROJECT_DIR$/app-ui/target/classes/ui/AppUIImpl.class" />
-      <change beforePath="$PROJECT_DIR$/app-ui/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/app-ui/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="4e9887af-333d-4be7-b132-0e4be434444f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/app-services/target/" />
     <ignored path="$PROJECT_DIR$/app-dao/target/" />
@@ -158,7 +116,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app-ui/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-460">
+            <state relative-caret-position="90">
               <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
               <folding />
             </state>
@@ -168,7 +126,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="180">
               <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding />
             </state>
@@ -279,7 +237,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-3" />
     <option name="width" value="700" />
     <option name="height" value="728" />
@@ -300,8 +258,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,96 +271,13 @@
             <path>
               <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-services" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-services" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-services" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-services" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
               <item name="app-ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multi-module-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-module-app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -737,6 +613,7 @@
       <workItem from="1522092227288" duration="8648000" />
       <workItem from="1522180613074" duration="2409000" />
       <workItem from="1522263213260" duration="9828000" />
+      <workItem from="1522683264152" duration="293000" />
     </task>
     <servers />
   </component>
@@ -773,41 +650,42 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95041000" />
+    <option name="totallyTimeSpent" value="95334000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5880342" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5880342" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27155825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3863248" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -989,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1067,7 +940,7 @@
               <point x="-57.0" y="-0.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-0.5" y="-16.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="-16.0" />
           <SelectedNodes>
             <node>module=app-services</node>
             <node>filePath=C:/Users/User/Documents/multi-module-app/app-services/src/main/resources/spring/spring-config.xml</node>
@@ -1075,6 +948,7 @@
           <Categories>
             <Category>Show filesets as groups</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1082,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,31 +970,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app-services/src/main/resources/spring/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app-dao/src/main/resources/spring/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="3" selection-start-column="75" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app-services/src/main/resources/spring/spring-config.xml" />
+    <entry file="file://$PROJECT_DIR$/app-dao/src/main/resources/spring/spring-config.xml" />
     <entry file="file://$PROJECT_DIR$/app-services/src/test/java/service/CacheableServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,7 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1962">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,12 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1521139301641" expanded="true" signature="0:104" ph="/.../" />
-            <marker date="1521139301641" expanded="true" signature="131:233" ph="..." />
-            <marker date="1521139301641" expanded="true" signature="325:332" ph="{}" />
-            <marker date="1521139301641" expanded="true" signature="384:781" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1183,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,7 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,7 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1207,7 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12820">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1227,14 +1068,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app-customized-service/src/main/resources/spring/spring-config-cust-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app-customized-service/src/main/resources/spring/spring-config-cust-service.xml" />
     <entry file="file://$PROJECT_DIR$/app-services/src/main/resources/spring/spring-config-service.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1243,14 +1077,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app-customized-service/app-customized-service.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app-customized-service/app-customized-service.iml" />
     <entry file="file://$PROJECT_DIR$/app-services/src/main/java/service/CacheableService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1291,22 +1118,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app-customized-service/src/main/java/custom_service/AppCustomazedService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app-customized-service/src/main/resources/spring/spring-config-custom-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app-customized-service/src/main/java/custom_service/AppCustomazedService.java" />
+    <entry file="file://$PROJECT_DIR$/app-customized-service/src/main/resources/spring/spring-config-custom-service.xml" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1315,25 +1128,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app-customized-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app-customized-service/src/main/resources/spring/spring-config-custservice.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app-customized-service/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/app-customized-service/src/main/resources/spring/spring-config-custservice.xml" />
     <entry file="file://$PROJECT_DIR$/app-ui/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-460">
+        <state relative-caret-position="90">
           <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
           <folding />
         </state>
@@ -1341,7 +1140,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="180">
           <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding />
         </state>
