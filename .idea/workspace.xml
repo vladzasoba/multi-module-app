@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/.gitignore" line="8" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e9887af-333d-4be7-b132-0e4be434444f" name="Default" comment="" />
+    <list default="true" id="4e9887af-333d-4be7-b132-0e4be434444f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/app-services/target/" />
     <ignored path="$PROJECT_DIR$/app-dao/target/" />
@@ -237,7 +239,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-3" />
     <option name="width" value="700" />
     <option name="height" value="728" />
@@ -613,7 +615,7 @@
       <workItem from="1522092227288" duration="8648000" />
       <workItem from="1522180613074" duration="2409000" />
       <workItem from="1522263213260" duration="9828000" />
-      <workItem from="1522683264152" duration="293000" />
+      <workItem from="1522683264152" duration="697000" />
     </task>
     <servers />
   </component>
@@ -650,11 +652,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95334000" />
+    <option name="totallyTimeSpent" value="95738000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
