@@ -1,8 +1,2 @@
 C:\Users\User\Documents\multi-module-app\app-services\src\main\java\service\AppService.java
-C:\Users\User\Documents\multi-module-app\app-services\src\main\java\caching\Cacheable.java
-C:\Users\User\Documents\multi-module-app\app-services\src\main\java\caching\CachingStrategy.java
 C:\Users\User\Documents\multi-module-app\app-services\src\main\java\service\AppServiceImpl.java
-C:\Users\User\Documents\multi-module-app\app-services\src\main\java\caching\CacheFactory.java
-C:\Users\User\Documents\multi-module-app\app-services\src\main\java\caching\Cache.java
-C:\Users\User\Documents\multi-module-app\app-services\src\main\java\service\CacheableService.java
-C:\Users\User\Documents\multi-module-app\app-services\src\main\java\caching\LRUCache.java
