@@ -13,6 +13,7 @@
     <module>app-ui</module>
     <module>app-caching</module>
     <module>app-custom-services</module>
+      <module>app-autoshop-dao</module>
   </modules>
 
   <dependencyManagement>
@@ -61,6 +62,12 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-beans</artifactId>
         <version>4.3.12.RELEASE</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api -->
+      <dependency>
+        <groupId>org.hibernate.javax.persistence</groupId>
+        <artifactId>hibernate-jpa-2.0-api</artifactId>
+        <version>1.0.1.Final</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

@@ -1,6 +1,8 @@
 package ui;
 
 import caching.CacheableProxy;
+import custom_service.AutoShopService;
+import entities.Customer;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -23,6 +25,7 @@ public class AppUIImpl implements AppUI {
         CacheableProxy<String, String> cacheProxy = (CacheableProxy<String, String>) applicationContext.getBean("cacheProxy");
         AppService serviceProxy = (AppService) cacheProxy.getProxy();
 
+        Customer customer = new AutoShopService().getCustomer(1);
 
         try {
             String dayOfWeek1 = serviceProxy.getDayOfWeek("01.03.2018");
