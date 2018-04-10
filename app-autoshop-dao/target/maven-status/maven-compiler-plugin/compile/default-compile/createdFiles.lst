@@ -1,0 +1,10 @@
+JpaTest.class
+entities\Manufacturer.class
+entities\Model.class
+entities\CarToOrder.class
+entities\Customer.class
+entities\Type.class
+autoshop_dao\AutoShopDao.class
+autoshop_dao\AutoShopDaoImpl.class
+entities\Order.class
+entities\Car.class

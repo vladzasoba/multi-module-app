@@ -1,0 +1,142 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="stud-vzasoba" id="stud-vzasoba">
+        <createTable tableName="CUSTOMER">
+            <column name="customer_id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="city" type="VARCHAR(50)"/>
+            <column name="email_address" type="VARCHAR(50)"/>
+            <column name="first_name" type="VARCHAR(100)"/>
+            <column name="last_name" type="VARCHAR(100)"/>
+            <column name="phone_number" type="VARCHAR(100)"/>
+            <column name="state" type="VARCHAR(100)"/>
+        </createTable>
+
+        <addAutoIncrement columnDataType="int"
+                          columnName="customer_id"
+                          incrementBy="1"
+                          schemaName="public"
+                          startWith="1"
+                          tableName="CUSTOMER"/>
+
+        <createTable tableName="MANUFACTURER">
+            <column name="manufacturer_id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(100)"/>
+        </createTable>
+
+        <addAutoIncrement columnDataType="int"
+                          columnName="manufacturer_id"
+                          incrementBy="1"
+                          schemaName="public"
+                          startWith="1"
+                          tableName="MANUFACTURER"/>
+
+        <createTable tableName="MODEL">
+            <column name="model_id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(100)"/>
+        </createTable>
+
+        <addAutoIncrement columnDataType="int"
+                          columnName="model_id"
+                          incrementBy="1"
+                          schemaName="public"
+                          startWith="1"
+                          tableName="MODEL"/>
+
+        <createTable tableName="TYPE">
+            <column name="type_id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(100)"/>
+        </createTable>
+
+        <addAutoIncrement columnDataType="int"
+                          columnName="type_id"
+                          incrementBy="1"
+                          schemaName="public"
+                          startWith="1"
+                          tableName="TYPE"/>
+
+        <createTable tableName="CAR">
+            <column name="car_id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="color" type="VARCHAR(50)"/>
+            <column name="manufacturer_id" type="INT">
+                <constraints foreignKeyName="fk_manufacturer_id"
+                             referencedColumnNames="manufacturer_id"
+                             referencedTableName="MANUFACTURER"/>
+            </column>
+            <column name="model_id" type="INT">
+                <constraints foreignKeyName="fk_model_id"
+                             referencedColumnNames="model_id"
+                             referencedTableName="MODEL"/>
+            </column>
+            <column name="type_id" type="INT">
+                <constraints foreignKeyName="fk_type_id"
+                             referencedColumnNames="type_id"
+                             referencedTableName="TYPE"/>
+            </column>
+            <column name="horse_power" type="INT"/>
+            <column name="price" type="INT"/>
+            <column name="year" type="INT"/>
+        </createTable>
+
+        <addAutoIncrement columnDataType="int"
+                          columnName="car_id"
+                          incrementBy="1"
+                          schemaName="public"
+                          startWith="1"
+                          tableName="CAR"/>
+
+        <createTable tableName="CAR_TO_ORDER">
+            <column name="car_to_order_id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="car_id" type="INT">
+                <constraints foreignKeyName="fk_car_id"
+                             referencedTableName="CAR"
+                             referencedColumnNames="car_id"/>
+            </column>
+        </createTable>
+
+        <addAutoIncrement columnDataType="int"
+                          columnName="car_to_order_id"
+                          incrementBy="1"
+                          schemaName="public"
+                          startWith="1"
+                          tableName="CAR_TO_ORDER"/>
+
+        <createTable tableName="ORDER">
+            <column name="order_id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="order_date" type="DATETIME"/>
+            <column name="customer_id" type="INT">
+                <constraints foreignKeyName="fk_customer_id"
+                             referencedTableName="CUSTOMER"
+                             referencedColumnNames="customer_id"/>
+            </column>
+        </createTable>
+
+        <addAutoIncrement columnDataType="int"
+                          columnName="order_id"
+                          incrementBy="1"
+                          schemaName="public"
+                          startWith="1"
+                          tableName="ORDER"/>
+    </changeSet>
+
+</databaseChangeLog>

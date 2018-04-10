@@ -10,7 +10,6 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "order_id")
     private long orderId;
-    @Column(name = "customer")
     @ManyToOne
     private Customer customer;
     @Column(name = "order_date")

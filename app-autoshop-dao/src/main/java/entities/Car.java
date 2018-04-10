@@ -7,15 +7,12 @@ import javax.persistence.*;
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private long id;
-    @Column(name = "type")
+    @Column(name = "car_id")
+    private long carId;
     @ManyToOne
     private Type type;
-    @Column(name = "model")
     @ManyToOne
     private Model model;
-    @Column(name = "manufacturer")
     @ManyToOne
     private Manufacturer manufacturerId;
     @Column(name = "year")
@@ -28,11 +25,11 @@ public class Car {
     private int horsePower;
 
     public long getId() {
-        return id;
+        return carId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setId(long carId) {
+        this.carId = carId;
     }
 
     public Type getType() {

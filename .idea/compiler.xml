@@ -23,7 +23,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="app-autoshop-dao" target="1.5" />
+      <module name="app-autoshop-dao" target="1.8" />
       <module name="app-caching" target="7" />
       <module name="app-custom-services" target="1.5" />
       <module name="app-dao" target="1.5" />

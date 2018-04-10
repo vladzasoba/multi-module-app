@@ -1,13 +1,14 @@
 package entities;
 
 import javax.persistence.*;
+import java.util.Objects;
 
-@Entity(name = "CUSTOMER")
-@Table(name = "CUSTOMER")
+@Entity
+@Table(name = "CUSTOMER", schema = "PUBLIC")
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "customer_d")
+    @Column(name = "customer_id")
     private long customerId;
     @Column(name = "first_name")
     private String firstName;
@@ -76,5 +77,25 @@ public class Customer {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return customerId == customer.customerId &&
+                Objects.equals(firstName, customer.firstName) &&
+                Objects.equals(lastName, customer.lastName) &&
+                Objects.equals(emailAddress, customer.emailAddress) &&
+                Objects.equals(phoneNumber, customer.phoneNumber) &&
+                Objects.equals(city, customer.city) &&
+                Objects.equals(state, customer.state);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(customerId, firstName, lastName, emailAddress, phoneNumber, city, state);
     }
 }
