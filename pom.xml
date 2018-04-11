@@ -85,6 +85,12 @@
         <skipTests>true</skipTests>
       </properties>
     </profile>
+    <profile>
+      <id>RunLiquidBaseUpdate</id>
+      <properties>
+        <liquibase>update</liquibase>
+      </properties>
+    </profile>
   </profiles>
 
   <build>

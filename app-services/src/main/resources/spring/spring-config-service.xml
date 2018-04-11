@@ -5,7 +5,7 @@
 
     <import resource="spring-config-dao.xml"/>
 
-    <bean name="appService" class="service.AppServiceImpl">
+    <bean name="appService" class="service.AppServiceImpl" primary="true">
         <property name="dao" ref="appDao1"/>
     </bean>
 </beans>

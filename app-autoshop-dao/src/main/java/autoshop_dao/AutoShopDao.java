@@ -1,15 +1,17 @@
 package autoshop_dao;
 
-import entities.*;
+import entities.CarEntity;
+import entities.CarToOrderEntity;
+import entities.CustomerEntity;
+import entities.OrderEntity;
 
 import java.util.List;
 
 public interface AutoShopDao {
-    Customer getCustomerById(long id);
-    List<Customer> getAllCustomers();
-    Car getCarById(long carId);
-    List<Car> getCarsByManufacturer(Manufacturer manufacturer);
-    List<Car> getCarsByModel(Model model);
-    Order getOrderById(long id);
-    List<Order> getOrdersByCustomer(Customer customer);
+    CustomerEntity getCustomerById(int customerId);
+    CarEntity getCarById(int carId);
+    List<OrderEntity> getOrdersByCustomer(CustomerEntity customer);
+    List<CarToOrderEntity> getCarsToOrder(OrderEntity order);
+    List<CarEntity> getOrderedCarsByCustomer(CustomerEntity customer);
+    int getTotalOrderPrice(OrderEntity order);
 }

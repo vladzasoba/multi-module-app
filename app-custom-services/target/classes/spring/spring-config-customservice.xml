@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <import resource="spring-config-dao.xml"/>
 
-    <bean class="custom_service.AppCustomService" id="customService">
+    <bean class="custom_service.AppCustomService" id="customService" primary="true">
         <property name="dao" ref="appDao1"/>
     </bean>
 </beans>
