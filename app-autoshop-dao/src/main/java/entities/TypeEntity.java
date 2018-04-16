@@ -7,12 +7,15 @@ import java.util.Objects;
 @Entity
 @Table(name = "TYPE", schema = "PUBLIC", catalog = "DOCUMENTS")
 public class TypeEntity {
-    private Integer typeId;
-    private String name;
-    private Collection<CarEntity> carsByTypeId;
-
     @Id
     @Column(name = "TYPE_ID", nullable = false)
+    private Integer typeId;
+    @Basic
+    @Column(name = "NAME", nullable = true, length = 100)
+    private String name;
+    @OneToMany(mappedBy = "typeByTypeId")
+    private Collection<CarEntity> carsByTypeId;
+
     public Integer getTypeId() {
         return typeId;
     }
@@ -21,8 +24,6 @@ public class TypeEntity {
         this.typeId = typeId;
     }
 
-    @Basic
-    @Column(name = "NAME", nullable = true, length = 100)
     public String getName() {
         return name;
     }
@@ -46,7 +47,6 @@ public class TypeEntity {
         return Objects.hash(typeId, name);
     }
 
-    @OneToMany(mappedBy = "typeByTypeId")
     public Collection<CarEntity> getCarsByTypeId() {
         return carsByTypeId;
     }

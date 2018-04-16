@@ -6,9 +6,9 @@
         <sourceOutputDir name="../../../target/generated-sources/annotations" />
         <sourceTestOutputDir name="../../../target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="maven-archiver (1)" />
-        <module name="maven-archiver (2)" />
         <module name="maven-archiver (3)" />
+        <module name="maven-archiver (4)" />
+        <module name="maven-archiver (5)" />
       </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -23,18 +23,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="app-autoshop-dao" target="1.8" />
-      <module name="app-caching" target="7" />
-      <module name="app-custom-services" target="1.5" />
-      <module name="app-dao" target="1.5" />
-      <module name="app-services" target="1.8" />
-      <module name="app-ui" target="1.5" />
       <module name="appcaching" target="1.5" />
       <module name="maven-archiver" target="1.5" />
       <module name="maven-archiver (1)" target="1.5" />
       <module name="maven-archiver (2)" target="1.5" />
-      <module name="maven-archiver (3)" target="1.5" />
-      <module name="multi-module-app" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
