@@ -7,12 +7,15 @@ import java.util.Objects;
 @Entity
 @Table(name = "MANUFACTURER", schema = "PUBLIC", catalog = "DOCUMENTS")
 public class ManufacturerEntity {
-    private Integer manufacturerId;
-    private String name;
-    private Collection<CarEntity> carsByManufacturerId;
-
     @Id
     @Column(name = "MANUFACTURER_ID", nullable = false)
+    private Integer manufacturerId;
+    @Basic
+    @Column(name = "NAME", nullable = true, length = 100)
+    private String name;
+    @OneToMany(mappedBy = "manufacturerByManufacturerId")
+    private Collection<CarEntity> carsByManufacturerId;
+
     public Integer getManufacturerId() {
         return manufacturerId;
     }
@@ -21,8 +24,6 @@ public class ManufacturerEntity {
         this.manufacturerId = manufacturerId;
     }
 
-    @Basic
-    @Column(name = "NAME", nullable = true, length = 100)
     public String getName() {
         return name;
     }
@@ -46,7 +47,6 @@ public class ManufacturerEntity {
         return Objects.hash(manufacturerId, name);
     }
 
-    @OneToMany(mappedBy = "manufacturerByManufacturerId")
     public Collection<CarEntity> getCarsByManufacturerId() {
         return carsByManufacturerId;
     }

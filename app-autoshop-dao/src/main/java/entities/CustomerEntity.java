@@ -7,17 +7,30 @@ import java.util.Objects;
 @Entity
 @Table(name = "CUSTOMER", schema = "PUBLIC", catalog = "DOCUMENTS")
 public class CustomerEntity {
-    private Integer customerId;
-    private String city;
-    private String emailAddress;
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
-    private String state;
-    private Collection<OrderEntity> ordersByCustomerId;
-
     @Id
     @Column(name = "CUSTOMER_ID", nullable = false)
+    private Integer customerId;
+    @Basic
+    @Column(name = "CITY", nullable = true, length = 50)
+    private String city;
+    @Basic
+    @Column(name = "EMAIL_ADDRESS", nullable = true, length = 50)
+    private String emailAddress;
+    @Basic
+    @Column(name = "FIRST_NAME", nullable = true, length = 100)
+    private String firstName;
+    @Basic
+    @Column(name = "LAST_NAME", nullable = true, length = 100)
+    private String lastName;
+    @Basic
+    @Column(name = "PHONE_NUMBER", nullable = true, length = 100)
+    private String phoneNumber;
+    @Basic
+    @Column(name = "STATE", nullable = true, length = 100)
+    private String state;
+    @OneToMany(mappedBy = "customerByCustomerId")
+    private Collection<OrderEntity> ordersByCustomerId;
+
     public Integer getCustomerId() {
         return customerId;
     }
@@ -26,8 +39,6 @@ public class CustomerEntity {
         this.customerId = customerId;
     }
 
-    @Basic
-    @Column(name = "CITY", nullable = true, length = 50)
     public String getCity() {
         return city;
     }
@@ -36,8 +47,6 @@ public class CustomerEntity {
         this.city = city;
     }
 
-    @Basic
-    @Column(name = "EMAIL_ADDRESS", nullable = true, length = 50)
     public String getEmailAddress() {
         return emailAddress;
     }
@@ -46,8 +55,6 @@ public class CustomerEntity {
         this.emailAddress = emailAddress;
     }
 
-    @Basic
-    @Column(name = "FIRST_NAME", nullable = true, length = 100)
     public String getFirstName() {
         return firstName;
     }
@@ -56,8 +63,6 @@ public class CustomerEntity {
         this.firstName = firstName;
     }
 
-    @Basic
-    @Column(name = "LAST_NAME", nullable = true, length = 100)
     public String getLastName() {
         return lastName;
     }
@@ -66,8 +71,6 @@ public class CustomerEntity {
         this.lastName = lastName;
     }
 
-    @Basic
-    @Column(name = "PHONE_NUMBER", nullable = true, length = 100)
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -76,8 +79,6 @@ public class CustomerEntity {
         this.phoneNumber = phoneNumber;
     }
 
-    @Basic
-    @Column(name = "STATE", nullable = true, length = 100)
     public String getState() {
         return state;
     }
@@ -106,7 +107,6 @@ public class CustomerEntity {
         return Objects.hash(customerId, city, emailAddress, firstName, lastName, phoneNumber, state);
     }
 
-    @OneToMany(mappedBy = "customerByCustomerId")
     public Collection<OrderEntity> getOrdersByCustomerId() {
         return ordersByCustomerId;
     }

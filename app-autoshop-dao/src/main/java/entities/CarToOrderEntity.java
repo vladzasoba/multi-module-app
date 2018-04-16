@@ -6,11 +6,13 @@ import java.util.Objects;
 @Entity
 @Table(name = "CAR_TO_ORDER", schema = "PUBLIC", catalog = "DOCUMENTS")
 public class CarToOrderEntity {
-    private Integer carToOrderId;
-    private CarEntity carByCarId;
-
     @Id
     @Column(name = "CAR_TO_ORDER_ID", nullable = false)
+    private Integer carToOrderId;
+    @ManyToOne
+    @JoinColumn(name = "CAR_ID", referencedColumnName = "CAR_ID")
+    private CarEntity carByCarId;
+
     public Integer getCarToOrderId() {
         return carToOrderId;
     }
@@ -33,8 +35,6 @@ public class CarToOrderEntity {
         return Objects.hash(carToOrderId);
     }
 
-    @ManyToOne
-    @JoinColumn(name = "CAR_ID", referencedColumnName = "CAR_ID")
     public CarEntity getCarByCarId() {
         return carByCarId;
     }

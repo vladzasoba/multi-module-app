@@ -7,12 +7,16 @@ import java.util.Objects;
 @Entity
 @Table(name = "ORDER", schema = "PUBLIC")
 public class OrderEntity {
-    private Integer orderId;
-    private Timestamp orderDate;
-    private CustomerEntity customerByCustomerId;
-
     @Id
     @Column(name = "ORDER_ID", nullable = false)
+    private Integer orderId;
+    @Basic
+    @Column(name = "ORDER_DATE", nullable = true)
+    private Timestamp orderDate;
+    @ManyToOne
+    @JoinColumn(name = "CUSTOMER_ID", referencedColumnName = "CUSTOMER_ID")
+    private CustomerEntity customerByCustomerId;
+
     public Integer getOrderId() {
         return orderId;
     }
@@ -21,8 +25,6 @@ public class OrderEntity {
         this.orderId = orderId;
     }
 
-    @Basic
-    @Column(name = "ORDER_DATE", nullable = true)
     public Timestamp getOrderDate() {
         return orderDate;
     }
@@ -46,8 +48,6 @@ public class OrderEntity {
         return Objects.hash(orderId, orderDate);
     }
 
-    @ManyToOne
-    @JoinColumn(name = "CUSTOMER_ID", referencedColumnName = "CUSTOMER_ID")
     public CustomerEntity getCustomerByCustomerId() {
         return customerByCustomerId;
     }

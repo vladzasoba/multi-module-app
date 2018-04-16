@@ -7,18 +7,33 @@ import java.util.Objects;
 @Entity
 @Table(name = "CAR", schema = "PUBLIC")
 public class CarEntity {
-    private Integer carId;
-    private String color;
-    private Integer horsePower;
-    private Integer price;
-    private Integer year;
-    private ManufacturerEntity manufacturerByManufacturerId;
-    private ModelEntity modelByModelId;
-    private TypeEntity typeByTypeId;
-    private Collection<CarToOrderEntity> carToOrdersByCarId;
-
     @Id
     @Column(name = "CAR_ID", nullable = false)
+    private Integer carId;
+    @Basic
+    @Column(name = "COLOR", nullable = true, length = 50)
+    private String color;
+    @Basic
+    @Column(name = "HORSE_POWER", nullable = true)
+    private Integer horsePower;
+    @Basic
+    @Column(name = "PRICE", nullable = true)
+    private Integer price;
+    @Basic
+    @Column(name = "YEAR", nullable = true)
+    private Integer year;
+    @ManyToOne
+    @JoinColumn(name = "MANUFACTURER_ID", referencedColumnName = "MANUFACTURER_ID")
+    private ManufacturerEntity manufacturerByManufacturerId;
+    @ManyToOne
+    @JoinColumn(name = "MODEL_ID", referencedColumnName = "MODEL_ID")
+    private ModelEntity modelByModelId;
+    @ManyToOne
+    @JoinColumn(name = "TYPE_ID", referencedColumnName = "TYPE_ID")
+    private TypeEntity typeByTypeId;
+    @OneToMany(mappedBy = "carByCarId")
+    private Collection<CarToOrderEntity> carToOrdersByCarId;
+
     public Integer getCarId() {
         return carId;
     }
@@ -27,8 +42,6 @@ public class CarEntity {
         this.carId = carId;
     }
 
-    @Basic
-    @Column(name = "COLOR", nullable = true, length = 50)
     public String getColor() {
         return color;
     }
@@ -37,8 +50,6 @@ public class CarEntity {
         this.color = color;
     }
 
-    @Basic
-    @Column(name = "HORSE_POWER", nullable = true)
     public Integer getHorsePower() {
         return horsePower;
     }
@@ -47,8 +58,6 @@ public class CarEntity {
         this.horsePower = horsePower;
     }
 
-    @Basic
-    @Column(name = "PRICE", nullable = true)
     public Integer getPrice() {
         return price;
     }
@@ -57,8 +66,6 @@ public class CarEntity {
         this.price = price;
     }
 
-    @Basic
-    @Column(name = "YEAR", nullable = true)
     public Integer getYear() {
         return year;
     }
@@ -85,8 +92,6 @@ public class CarEntity {
         return Objects.hash(carId, color, horsePower, price, year);
     }
 
-    @ManyToOne
-    @JoinColumn(name = "MANUFACTURER_ID", referencedColumnName = "MANUFACTURER_ID")
     public ManufacturerEntity getManufacturerByManufacturerId() {
         return manufacturerByManufacturerId;
     }
@@ -95,8 +100,6 @@ public class CarEntity {
         this.manufacturerByManufacturerId = manufacturerByManufacturerId;
     }
 
-    @ManyToOne
-    @JoinColumn(name = "MODEL_ID", referencedColumnName = "MODEL_ID")
     public ModelEntity getModelByModelId() {
         return modelByModelId;
     }
@@ -105,8 +108,6 @@ public class CarEntity {
         this.modelByModelId = modelByModelId;
     }
 
-    @ManyToOne
-    @JoinColumn(name = "TYPE_ID", referencedColumnName = "TYPE_ID")
     public TypeEntity getTypeByTypeId() {
         return typeByTypeId;
     }
@@ -115,7 +116,6 @@ public class CarEntity {
         this.typeByTypeId = typeByTypeId;
     }
 
-    @OneToMany(mappedBy = "carByCarId")
     public Collection<CarToOrderEntity> getCarToOrdersByCarId() {
         return carToOrdersByCarId;
     }
