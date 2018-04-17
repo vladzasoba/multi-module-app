@@ -46,19 +46,10 @@ public class AutoShopDaoImpl implements AutoShopDao {
         return (List) customer.getOrdersByCustomerId();
     }
 
+    //TODO
     @Override
     public List<CarToOrderEntity> getCarsToOrder(OrderEntity order) {
-        EntityManagerFactory shopPersistenceUnit = Persistence.createEntityManagerFactory("AutoShopPersistenceUnit");
-        EntityManager entityManager = shopPersistenceUnit.createEntityManager();
-
-        Query query = entityManager.createQuery("select co from CarToOrderEntity co where carToOrderId = :orderId");
-        query.setParameter("orderId", order.getOrderId());
-        List<CarToOrderEntity> resultList = query.getResultList();
-
-        entityManager.close();
-        shopPersistenceUnit.close();
-
-        return resultList;
+        return null;
     }
 
     @Override
@@ -78,17 +69,5 @@ public class AutoShopDaoImpl implements AutoShopDao {
         }
 
         return cars;
-    }
-
-    @Override
-    public int getTotalOrderPrice(OrderEntity order) {
-        int totalPrice = 0;
-        List<CarToOrderEntity> carsToOrder = getCarsToOrder(order);
-
-        for (CarToOrderEntity carToOrder: carsToOrder) {
-            totalPrice += carToOrder.getCarByCarId().getPrice();
-        }
-
-        return totalPrice;
     }
 }

@@ -10,10 +10,11 @@
         <class>entities.OrderEntity</class>
         <class>entities.TypeEntity</class>
         <properties>
-            <property name="hibernate.connection.url" value="jdbc:h2:file:C:/Users/User/Documents"/>
-            <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@odsstudora01.exigengroup.com:1521:testdb"/>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+            <property name="hibernate.default_schema" value="stud_vzasoba"/>
             <property name="hibernate.connection.username" value="stud_vzasoba"/>
-            <property name="hibernate.connection.password" value="EISEXTREAME2018-08"/>
+            <property name="hibernate.connection.password" value="stud_vzasob"/>
             <property name="hibernate.archive.autodetection" value="class"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>

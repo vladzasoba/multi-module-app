@@ -8,7 +8,7 @@
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
     <changeSet author="stud-vzasoba" id="stud-vzasoba">
-        <createTable tableName="CUSTOMER">
+        <createTable tableName="CAR_CUSTOMER" schemaName="STUD_VZASOBA">
             <column name="customer_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -25,9 +25,9 @@
                           incrementBy="1"
                           schemaName="public"
                           startWith="1"
-                          tableName="CUSTOMER"/>
+                          tableName="CAR_CUSTOMER"/>
 
-        <createTable tableName="MANUFACTURER">
+        <createTable tableName="MANUFACTURER" schemaName="STUD_VZASOBA">
             <column name="manufacturer_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -41,7 +41,7 @@
                           startWith="1"
                           tableName="MANUFACTURER"/>
 
-        <createTable tableName="MODEL">
+        <createTable tableName="MODEL"  schemaName="STUD_VZASOBA">
             <column name="model_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -55,7 +55,7 @@
                           startWith="1"
                           tableName="MODEL"/>
 
-        <createTable tableName="TYPE">
+        <createTable tableName="TYPE" schemaName="STUD_VZASOBA">
             <column name="type_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -69,7 +69,7 @@
                           startWith="1"
                           tableName="TYPE"/>
 
-        <createTable tableName="CAR">
+        <createTable tableName="CAR" schemaName="STUD_VZASOBA">
             <column name="car_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -101,7 +101,7 @@
                           startWith="1"
                           tableName="CAR"/>
 
-        <createTable tableName="CAR_TO_ORDER">
+        <createTable tableName="CAR_TO_ORDER" schemaName="STUD_VZASOBA">
             <column name="car_to_order_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -119,7 +119,7 @@
                           startWith="1"
                           tableName="CAR_TO_ORDER"/>
 
-        <createTable tableName="ORDER">
+        <createTable tableName="ORDER" schemaName="STUD_VZASOBA">
             <column name="order_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>

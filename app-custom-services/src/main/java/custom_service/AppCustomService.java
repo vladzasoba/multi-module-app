@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class AppCustomService implements AppService, Cacheable {
+public class AppCustomService implements Cacheable, AppService {
     private AppDao dao;
 
     @CacheableMethod(strategy = LRUCache.class)

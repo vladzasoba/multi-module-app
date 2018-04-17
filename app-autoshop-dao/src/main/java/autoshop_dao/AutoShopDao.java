@@ -13,5 +13,4 @@ public interface AutoShopDao {
     List<OrderEntity> getOrdersByCustomer(CustomerEntity customer);
     List<CarToOrderEntity> getCarsToOrder(OrderEntity order);
     List<CarEntity> getOrderedCarsByCustomer(CustomerEntity customer);
-    int getTotalOrderPrice(OrderEntity order);
 }

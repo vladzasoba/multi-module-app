@@ -8,7 +8,7 @@
     <parent>
         <artifactId>multi-module-app</artifactId>
         <groupId>com.vladzasoba</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -18,27 +18,17 @@
         <dependency>
             <groupId>com.vladzasoba</groupId>
             <artifactId>app-dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>com.vladzasoba</groupId>
             <artifactId>app-caching</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>com.vladzasoba</groupId>
             <artifactId>app-services</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.vladzasoba</groupId>
-            <artifactId>app-caching</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.vladzasoba</groupId>
-            <artifactId>app-autoshop-dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

@@ -4,7 +4,7 @@
   <groupId>com.vladzasoba</groupId>
   <artifactId>multi-module-app</artifactId>
   <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
 
   <modules>
@@ -14,6 +14,7 @@
     <module>app-caching</module>
     <module>app-custom-services</module>
       <module>app-autoshop-dao</module>
+      <module>app-deploy</module>
   </modules>
 
   <dependencyManagement>
