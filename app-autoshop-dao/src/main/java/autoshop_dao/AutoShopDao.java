@@ -10,7 +10,5 @@ import java.util.List;
 public interface AutoShopDao {
     CustomerEntity getCustomerById(int customerId);
     CarEntity getCarById(int carId);
-    List<OrderEntity> getOrdersByCustomer(CustomerEntity customer);
-    List<CarToOrderEntity> getCarsToOrder(OrderEntity order);
-    List<CarEntity> getOrderedCarsByCustomer(CustomerEntity customer);
+    List<CarEntity> getAllCarEntities();
 }

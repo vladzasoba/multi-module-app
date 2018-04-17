@@ -9,6 +9,7 @@
         <module name="maven-archiver" />
         <module name="maven-archiver (1)" />
         <module name="maven-archiver (2)" />
+        <module name="maven-archiver (3)" />
         <module name="maven-archiver (4)" />
         <module name="maven-archiver (5)" />
       </profile>
@@ -17,6 +18,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="app-autoshop-dao" />
+        <module name="app-autoshop-service" />
+        <module name="app-autoshop-ui" />
         <module name="app-caching" />
         <module name="app-custom-services" />
         <module name="app-dao" />
@@ -27,6 +30,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="app-autoshop-dao" target="1.8" />
+      <module name="app-autoshop-service" target="1.5" />
+      <module name="app-autoshop-ui" target="1.5" />
       <module name="app-caching" target="8" />
       <module name="app-custom-services" target="1.5" />
       <module name="app-dao" target="1.5" />

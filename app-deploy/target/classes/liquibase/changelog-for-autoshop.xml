@@ -8,7 +8,8 @@
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
     <changeSet author="stud-vzasoba" id="stud-vzasoba">
-        <createTable tableName="CAR_CUSTOMER" schemaName="STUD_VZASOBA">
+
+        <createTable tableName="CAR_CUSTOMER">
             <column name="customer_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -41,7 +42,7 @@
                           startWith="1"
                           tableName="MANUFACTURER"/>
 
-        <createTable tableName="MODEL"  schemaName="STUD_VZASOBA">
+        <createTable tableName="MODEL">
             <column name="model_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -55,7 +56,7 @@
                           startWith="1"
                           tableName="MODEL"/>
 
-        <createTable tableName="TYPE" schemaName="STUD_VZASOBA">
+        <createTable tableName="TYPE">
             <column name="type_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -69,7 +70,7 @@
                           startWith="1"
                           tableName="TYPE"/>
 
-        <createTable tableName="CAR" schemaName="STUD_VZASOBA">
+        <createTable tableName="CAR">
             <column name="car_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -101,7 +102,7 @@
                           startWith="1"
                           tableName="CAR"/>
 
-        <createTable tableName="CAR_TO_ORDER" schemaName="STUD_VZASOBA">
+        <createTable tableName="CAR_TO_ORDER">
             <column name="car_to_order_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
@@ -109,6 +110,11 @@
                 <constraints foreignKeyName="fk_car_id"
                              referencedTableName="CAR"
                              referencedColumnNames="car_id"/>
+            </column>
+            <column name="order_id" type="INT">
+                <constraints foreignKeyName="fk_order_id"
+                             referencedColumnNames="order_id"
+                             referencedTableName="order"/>
             </column>
         </createTable>
 
@@ -119,7 +125,7 @@
                           startWith="1"
                           tableName="CAR_TO_ORDER"/>
 
-        <createTable tableName="ORDER" schemaName="STUD_VZASOBA">
+        <createTable tableName="ORDER">
             <column name="order_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>

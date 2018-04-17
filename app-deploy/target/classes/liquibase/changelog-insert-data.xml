@@ -1,0 +1,204 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="stud-vzasoba" id="2">
+        <insert tableName="CUSTOMER">
+            <column name="CITY" value="Odessa"/>
+            <column name="EMAIL_ADDRESS" value="iivanko@gmail.com"/>
+            <column name="FIRST_NAME" value="Ivan"/>
+            <column name="LAST_NAME" value="Ivanko"/>
+            <column name="PHONE_NUMBER" value="+380503355511"/>
+            <column name="STATE" value="Ukraine"/>
+        </insert>
+        <insert tableName="CUSTOMER">
+            <column name="CITY" value="Moscow"/>
+            <column name="EMAIL_ADDRESS" value="apetrova@gmail.com"/>
+            <column name="FIRST_NAME" value="Anna"/>
+            <column name="LAST_NAME" value="Petrova"/>
+            <column name="PHONE_NUMBER" value="+7503355522"/>
+            <column name="STATE" value="Russia"/>
+        </insert>
+        <insert tableName="CUSTOMER">
+            <column name="CITY" value="Hamburg"/>
+            <column name="EMAIL_ADDRESS" value="mmustermann@gmail.com"/>
+            <column name="FIRST_NAME" value="Max"/>
+            <column name="LAST_NAME" value="Mustermann"/>
+            <column name="PHONE_NUMBER" value="+49503355511"/>
+            <column name="STATE" value="Germany"/>
+        </insert>
+
+        <insert tableName="MANUFACTURER">
+            <column name="NAME" value="BMW"/>
+        </insert>
+        <insert tableName="MANUFACTURER">
+            <column name="NAME" value="MAN"/>
+        </insert>
+        <insert tableName="MANUFACTURER">
+            <column name="NAME" value="Ford"/>
+        </insert>
+
+        <insert tableName="TYPE">
+            <column name="NAME" value="City-car"/>
+        </insert>
+        <insert tableName="TYPE">
+            <column name="NAME" value="Trucker"/>
+        </insert>
+        <insert tableName="TYPE">
+            <column name="NAME" value="Coupe"/>
+        </insert>
+        <insert tableName="TYPE">
+            <column name="NAME" value="Hatchback"/>
+        </insert>
+
+        <insert tableName="MODEL">
+            <column name="NAME" value="Focus"/>
+        </insert>
+        <insert tableName="MODEL">
+            <column name="NAME" value="3 Series"/>
+        </insert>
+        <insert tableName="MODEL">
+            <column name="NAME" value="2 Series"/>
+        </insert>
+        <insert tableName="MODEL">
+            <column name="NAME" value="1 Series"/>
+        </insert>
+        <insert tableName="MODEL">
+            <column name="NAME" value="TGX"/>
+        </insert>
+        <insert tableName="MODEL">
+            <column name="NAME" value="TGL"/>
+        </insert>
+
+        <insert tableName="CAR">
+            <column name="MANUFACTURER_ID" value="1"/>
+            <column name="COLOR" value="GREY"/>
+            <column name="MODEL_ID" value="2"/>
+            <column name="TYPE_ID" value="1"/>
+            <column name="HORSE_POWER" value="116"/>
+            <column name="PRICE" value="14990"/>
+            <column name="YEAR" value="2015"/>
+        </insert>
+        <insert tableName="CAR">
+            <column name="MANUFACTURER_ID" value="1"/>
+            <column name="COLOR" value="WHITE"/>
+            <column name="MODEL_ID" value="3"/>
+            <column name="TYPE_ID" value="1"/>
+            <column name="HORSE_POWER" value="1130"/>
+            <column name="PRICE" value="15990"/>
+            <column name="YEAR" value="2015"/>
+        </insert>
+        <insert tableName="CAR">
+            <column name="MANUFACTURER_ID" value="1"/>
+            <column name="COLOR" value="BLACK"/>
+            <column name="MODEL_ID" value="4"/>
+            <column name="TYPE_ID" value="1"/>
+            <column name="HORSE_POWER" value="120"/>
+            <column name="PRICE" value="16990"/>
+            <column name="YEAR" value="2015"/>
+        </insert>
+
+        <insert tableName="CAR">
+            <column name="MANUFACTURER_ID" value="2"/>
+            <column name="COLOR" value="DARK GREY"/>
+            <column name="MODEL_ID" value="5"/>
+            <column name="TYPE_ID" value="2"/>
+            <column name="HORSE_POWER" value="230"/>
+            <column name="PRICE" value="24990"/>
+            <column name="YEAR" value="2012"/>
+        </insert>
+        <insert tableName="CAR">
+            <column name="MANUFACTURER_ID" value="2"/>
+            <column name="COLOR" value="DEEP PURPLE"/>
+            <column name="MODEL_ID" value="6"/>
+            <column name="TYPE_ID" value="2"/>
+            <column name="HORSE_POWER" value="230"/>
+            <column name="PRICE" value="24990"/>
+            <column name="YEAR" value="2012"/>
+        </insert>
+
+        <insert tableName="CAR">
+            <column name="MANUFACTURER_ID" value="3"/>
+            <column name="COLOR" value="RED"/>
+            <column name="MODEL_ID" value="6"/>
+            <column name="TYPE_ID" value="1"/>
+            <column name="HORSE_POWER" value="100"/>
+            <column name="PRICE" value="12990"/>
+            <column name="YEAR" value="2014"/>
+        </insert>
+        <insert tableName="CAR">
+            <column name="MANUFACTURER_ID" value="3"/>
+            <column name="COLOR" value="DARK BLUE"/>
+            <column name="MODEL_ID" value="6"/>
+            <column name="TYPE_ID" value="3"/>
+            <column name="HORSE_POWER" value="100"/>
+            <column name="PRICE" value="12490"/>
+            <column name="YEAR" value="2014"/>
+        </insert>
+        <insert tableName="CAR">
+            <column name="MANUFACTURER_ID" value="3"/>
+            <column name="COLOR" value="BLACK"/>
+            <column name="MODEL_ID" value="6"/>
+            <column name="TYPE_ID" value="4"/>
+            <column name="HORSE_POWER" value="110"/>
+            <column name="PRICE" value="13490"/>
+            <column name="YEAR" value="2015"/>
+        </insert>
+
+        <insert tableName="ORDER">
+            <column name="ORDER_DATE" value="2018-01-03"/>
+            <column name="CUSTOMER_ID" value="1"/>
+        </insert>
+        <insert tableName="ORDER">
+            <column name="ORDER_DATE" value="2018-02-02"/>
+            <column name="CUSTOMER_ID" value="1"/>
+        </insert>
+        <insert tableName="ORDER">
+            <column name="ORDER_DATE" value="2018-01-12"/>
+            <column name="CUSTOMER_ID" value="2"/>
+        </insert>
+        <insert tableName="ORDER">
+            <column name="ORDER_DATE" value="2018-04-14"/>
+            <column name="CUSTOMER_ID" value="3"/>
+        </insert>
+
+        <insert tableName="CAR_TO_ORDER">
+            <column name="CAR_ID" value="1"/>
+            <column name="ORDER_ID" value="1"/>
+        </insert>
+        <insert tableName="CAR_TO_ORDER">
+            <column name="CAR_ID" value="2"/>
+            <column name="ORDER_ID" value="1"/>
+        </insert>
+        <insert tableName="CAR_TO_ORDER">
+            <column name="CAR_ID" value="3"/>
+            <column name="ORDER_ID" value="2"/>
+        </insert>
+        <insert tableName="CAR_TO_ORDER">
+            <column name="CAR_ID" value="4"/>
+            <column name="ORDER_ID" value="2"/>
+        </insert>
+        <insert tableName="CAR_TO_ORDER">
+            <column name="CAR_ID" value="5"/>
+            <column name="ORDER_ID" value="3"/>
+        </insert>
+        <insert tableName="CAR_TO_ORDER">
+            <column name="CAR_ID" value="6"/>
+            <column name="ORDER_ID" value="4"/>
+        </insert>
+        <insert tableName="CAR_TO_ORDER">
+            <column name="CAR_ID" value="7"/>
+            <column name="ORDER_ID" value="4"/>
+        </insert>
+        <insert tableName="CAR_TO_ORDER">
+            <column name="CAR_ID" value="8"/>
+            <column name="ORDER_ID" value="4"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

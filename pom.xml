@@ -15,6 +15,8 @@
     <module>app-custom-services</module>
       <module>app-autoshop-dao</module>
       <module>app-deploy</module>
+      <module>app-autoshop-ui</module>
+    <module>app-autoshop-service</module>
   </modules>
 
   <dependencyManagement>

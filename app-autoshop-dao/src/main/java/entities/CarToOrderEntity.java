@@ -12,6 +12,8 @@ public class CarToOrderEntity {
     @ManyToOne
     @JoinColumn(name = "CAR_ID", referencedColumnName = "CAR_ID")
     private CarEntity carByCarId;
+    @OneToOne(mappedBy = "ORDER_ID")
+    private OrderEntity order;
 
     public Integer getCarToOrderId() {
         return carToOrderId;
@@ -41,5 +43,13 @@ public class CarToOrderEntity {
 
     public void setCarByCarId(CarEntity carByCarId) {
         this.carByCarId = carByCarId;
+    }
+
+    public OrderEntity getOrder() {
+        return order;
+    }
+
+    public void setOrder(OrderEntity order) {
+        this.order = order;
     }
 }
