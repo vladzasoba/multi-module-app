@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "CAR_TO_ORDER", schema = "stud_vzasoba")
+@Table(name = "CAR_TO_ORDER")
 public class CarToOrderEntity {
     @Id
     @Column(name = "CAR_TO_ORDER_ID", nullable = false)
@@ -12,8 +12,9 @@ public class CarToOrderEntity {
     @ManyToOne
     @JoinColumn(name = "CAR_ID", referencedColumnName = "CAR_ID")
     private CarEntity carByCarId;
-    @OneToOne(mappedBy = "ORDER_ID")
-    private OrderEntity order;
+    @ManyToOne
+    @JoinColumn(name = "ORDER_ID", referencedColumnName = "ORDER_ID")
+    private OrderEntity orderByOrderId;
 
     public Integer getCarToOrderId() {
         return carToOrderId;
@@ -46,10 +47,10 @@ public class CarToOrderEntity {
     }
 
     public OrderEntity getOrder() {
-        return order;
+        return orderByOrderId;
     }
 
     public void setOrder(OrderEntity order) {
-        this.order = order;
+        this.orderByOrderId = order;
     }
 }

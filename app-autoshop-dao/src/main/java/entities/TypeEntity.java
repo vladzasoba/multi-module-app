@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(name = "TYPE", schema = "stud_vzasoba")
+@Table(name = "TYPE")
 public class TypeEntity {
     @Id
     @Column(name = "TYPE_ID", nullable = false)

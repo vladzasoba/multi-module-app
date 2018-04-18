@@ -27,6 +27,17 @@ public class AutoShopDaoImpl implements AutoShopDao {
 
     @Override
     public List<CarEntity> getAllCarEntities() {
-        return null;
+        EntityManagerFactory autoShopPersistenceUnit = Persistence.createEntityManagerFactory("AutoShopPersistenceUnit");
+        EntityManager entityManager = autoShopPersistenceUnit.createEntityManager();
+
+        entityManager.getTransaction().begin();
+
+        Query query = entityManager.createQuery("SELECT c from CarEntity c");
+        List<CarEntity> resultList = query.getResultList();
+
+        entityManager.getTransaction().commit();
+        entityManager.close();
+        autoShopPersistenceUnit.close();
+        return resultList;
     }
 }
