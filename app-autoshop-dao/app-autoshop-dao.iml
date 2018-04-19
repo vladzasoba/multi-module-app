@@ -7,6 +7,7 @@
         <setting name="provider-name" value="" />
         <datasource-mapping>
           <factory-entry name="AutoShopPersistenceUnit" value="90eae153-2b8e-4aa5-9199-525e7e9e7266" />
+          <factory-entry name="VehicleStorePersistenceUnit" value="759c1ed6-0132-4ee2-98d9-d492bf626371" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>
