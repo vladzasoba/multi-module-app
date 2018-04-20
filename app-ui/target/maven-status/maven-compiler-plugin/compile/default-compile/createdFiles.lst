@@ -1,2 +1,2 @@
-ui\AppUI.class
-ui\AppUIImpl.class
+ui/AppUIImpl.class
+ui/AppUI.class

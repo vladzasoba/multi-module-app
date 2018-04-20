@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "BODY_TYPE")
+@Table(name = "BODY_TYPE", schema = "PUBLIC")
 public class BodyType {
     @Id
     @Column(name = "BODY_TYPE_ID", nullable = false)

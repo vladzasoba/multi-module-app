@@ -3,7 +3,7 @@ package entities;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
+//@Entity
 @Table(name = "CAR_TO_ORDER")
 public class CarToOrderEntity {
     @Id

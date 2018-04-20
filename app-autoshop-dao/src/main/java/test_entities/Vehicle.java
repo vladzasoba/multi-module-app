@@ -6,7 +6,7 @@ import java.util.Objects;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@Table(name = "VEHICLE")
+@Table(name = "VEHICLE", schema = "PUBLIC")
 public abstract class Vehicle {
     @Id
     @Column(name = "VEHICLE_ID", nullable = false)

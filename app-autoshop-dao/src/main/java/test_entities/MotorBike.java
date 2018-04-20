@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "MOTOR_BIKE")
+@Table(name = "MOTOR_BIKE", schema = "PUBLIC")
 public class MotorBike extends Vehicle {
     @ManyToOne
     @JoinColumn(name = "BODY_TYPE_ID", table = "BODY_TYPE")

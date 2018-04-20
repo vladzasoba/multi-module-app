@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.h2.Driver</property>
+        <property name="hibernate.connection.url">jdbc:h2:file:/Users/wildix/Documents/rep</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">1111aaaa</property>
+
+        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <property name="hibernate.hbm2ddl.auto" >create</property>
+
+        <mapping class="test_entities.Customer"/>
+        <mapping class="test_entities.BodyType"/>
+        <mapping class="test_entities.Car"/>
+        <mapping class="test_entities.Category"/>
+        <mapping class="test_entities.Manufacturer"/>
+        <mapping class="test_entities.MotorBike"/>
+        <mapping class="test_entities.Order"/>
+        <mapping class="test_entities.Type"/>
+        <mapping class="test_entities.Vehicle"/>
+        <mapping class="test_entities.VehicleToOrder"/>
+        <!--<mapping resource="book.hbm.xml" />-->
+    </session-factory>
+</hibernate-configuration>

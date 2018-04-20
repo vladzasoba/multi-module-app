@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "CUSTOMER")
+@Table(name = "CUSTOMER", schema = "PUBLIC")
 public class Customer {
     @Id
     @Column(name = "CUSTOMER_ID", nullable = false)

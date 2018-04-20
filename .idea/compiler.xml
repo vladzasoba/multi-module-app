@@ -29,21 +29,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="app-autoshop-dao" target="1.8" />
-      <module name="app-autoshop-service" target="1.5" />
-      <module name="app-autoshop-ui" target="1.5" />
-      <module name="app-caching" target="8" />
-      <module name="app-custom-services" target="1.5" />
-      <module name="app-dao" target="1.5" />
-      <module name="app-deploy" target="1.5" />
-      <module name="app-services" target="1.8" />
-      <module name="app-ui" target="1.5" />
       <module name="appcaching" target="1.5" />
       <module name="maven-archiver" target="1.5" />
-      <module name="maven-archiver (1)" target="1.5" />
-      <module name="maven-archiver (2)" target="1.5" />
-      <module name="maven-archiver (3)" target="1.5" />
-      <module name="multi-module-app" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.Objects;
 
 @Entity
-@Table(name = "ORDER")
+@Table(name = "ORDER", schema = "PUBLIC")
 public class Order {
     @Id
     @Column(name = "ORDER_ID", nullable = false)

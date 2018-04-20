@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "VEHICLE_TO_ORDER")
+@Table(name = "VEHICLE_TO_ORDER", schema = "PUBLIC")
 public class VehicleToOrder {
     @Id
     @Column(name = "VEHICLE_TO_ORDER_ID", nullable = false)

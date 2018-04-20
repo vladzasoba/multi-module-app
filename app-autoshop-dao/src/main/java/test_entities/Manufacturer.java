@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "MANUFACTURER")
+@Table(name = "MANUFACTURER", schema = "PUBLIC")
 public class Manufacturer {
     @Id
     @Column(name = "MANUFACTURER_ID", nullable = false)

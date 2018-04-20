@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "CATEGORY")
+@Table(name = "CATEGORY", schema = "PUBLIC")
 public class Category {
     @Id
     @Column(name = "CATEGORY_ID", nullable = false)
