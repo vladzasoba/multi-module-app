@@ -42,27 +42,47 @@
 
     <persistence-unit name="VehicleStorePersistenceUnit">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>test_entities.BodyType</class>
-        <class>test_entities.Category</class>
-        <class>test_entities.Car</class>
-        <class>test_entities.Customer</class>
-        <class>test_entities.Manufacturer</class>
-        <class>test_entities.MotorBike</class>
-        <class>test_entities.Order</class>
-        <class>test_entities.Type</class>
-        <class>test_entities.Vehicle</class>
-        <class>test_entities.VehicleToOrder</class>
+
+        <!--<class>test_entities.BodyType</class>-->
+        <!--<class>test_entities.Category</class>-->
+        <!--<class>test_entities.Car</class>-->
+        <!--<class>test_entities.Customer</class>-->
+        <!--<class>test_entities.Manufacturer</class>-->
+        <!--<class>test_entities.MotorBike</class>-->
+        <!--<class>test_entities.Order</class>-->
+        <!--<class>test_entities.Type</class>-->
+        <!--<class>test_entities.Vehicle</class>-->
+        <!--<class>test_entities.VehicleToOrder</class>-->
+        <class>new_entities.BodyType</class>
+        <class>new_entities.Category</class>
+        <class>new_entities.Customer</class>
+        <class>new_entities.Manufacturer</class>
+        <class>new_entities.Order</class>
+        <class>new_entities.Type</class>
+        <class>new_entities.Vehicle</class>
+        <class>new_entities.VehicleToOrder</class>
+        <!--<class>new_entities.BodyTypeEntity</class>-->
+        <!--<class>new_entities.CarEntity</class>-->
+        <!--<class>new_entities.CategoryEntity</class>-->
+        <!--<class>new_entities.CustomerEntity</class>-->
+        <!--<class>new_entities.ManufacturerEntity</class>-->
+        <!--<class>new_entities.MotorBikeEntity</class>-->
+        <!--<class>new_entities.OrdersEntity</class>-->
+        <!--<class>new_entities.TypeEntity</class>-->
+        <!--<class>new_entities.VehicleEntity</class>-->
+        <!--<class>new_entities.VehicleToOrderEntity</class>-->
 
         <properties>
-            <property name="hibernate.connection.url" value="jdbc:h2:file:/Users/wildix/Documents/rep"/>
-            <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/mma"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
             <property name="hibernate.connection.username" value="root"/>
             <property name="hibernate.connection.password" value="1111aaaa"/>
 
             <property name="hibernate.archive.autodetection" value="class"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>-->
         </properties>
 
     </persistence-unit>

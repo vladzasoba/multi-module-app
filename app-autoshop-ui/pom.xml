@@ -15,7 +15,7 @@
     <dependencies>
         <dependency>
             <groupId>com.vladzasoba</groupId>
-            <artifactId>app-autoshop-dao</artifactId>
+            <artifactId>app-autoshop-service</artifactId>
             <version>1.0</version>
         </dependency>
 

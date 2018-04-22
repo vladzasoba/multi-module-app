@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="../../../target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="maven-archiver" />
-        <module name="maven-archiver (1)" />
         <module name="maven-archiver (2)" />
         <module name="maven-archiver (3)" />
         <module name="maven-archiver (4)" />
@@ -30,7 +29,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="appcaching" target="1.5" />
-      <module name="maven-archiver" target="1.5" />
+      <module name="maven-archiver (1)" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
