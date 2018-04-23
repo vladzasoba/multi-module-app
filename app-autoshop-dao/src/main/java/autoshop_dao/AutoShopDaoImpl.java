@@ -1,10 +1,8 @@
 package autoshop_dao;
 
 
-import entities.CarEntity;
-import entities.CarToOrderEntity;
-import entities.CustomerEntity;
-import entities.OrderEntity;
+
+import new_entities.Manufacturer;
 import new_entities.Vehicle;
 
 import javax.persistence.EntityManager;
@@ -25,6 +23,25 @@ public class AutoShopDaoImpl implements AutoShopDao {
 
 
         Query query = entityManager.createQuery("select v from Vehicle v");
+        List resultList = query.getResultList();
+
+        entityManager.getTransaction().commit();
+
+        entityManager.close();
+        managerFactory.close();
+
+        return resultList;
+    }
+
+    @Override
+    public List<Manufacturer> getManufacturers() {
+        EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("VehicleStorePersistenceUnit");
+        EntityManager entityManager = managerFactory.createEntityManager();
+
+        entityManager.getTransaction().begin();
+
+
+        Query query = entityManager.createQuery("select m from Manufacturer m");
         List resultList = query.getResultList();
 
         entityManager.getTransaction().commit();

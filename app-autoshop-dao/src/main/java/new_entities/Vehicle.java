@@ -6,6 +6,7 @@ import java.util.Objects;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "category_id")
+@Table(name = "VEHICLE", schema = "STUD_VZASOBA")
 public class Vehicle {
     @Id
     @Column(name = "vehicle_id", nullable = false)

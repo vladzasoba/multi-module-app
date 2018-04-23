@@ -16,7 +16,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="app-autoshop-dao" />
         <module name="app-autoshop-service" />
         <module name="app-autoshop-ui" />
         <module name="app-caching" />
@@ -25,6 +24,12 @@
         <module name="app-deploy" />
         <module name="app-services" />
         <module name="app-ui" />
+      </profile>
+      <profile name="Annotation profile for multi-module-app" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app-autoshop-dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

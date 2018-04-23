@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
+@Table(name = "AN_ORDER", schema = "STUD_VZASOBA")
 public class Order {
     @Id
     @Column(name = "order_id", nullable = false)

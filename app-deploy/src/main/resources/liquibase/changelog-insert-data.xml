@@ -20,21 +20,24 @@
     <property name="double.type" value="DOUBLE" dbms="mysql"/>
 
     <changeSet author="stud-vzasoba" id="2">
-        <insert tableName="CUSTOMER">
+        <insert tableName="A_CUSTOMER" schemaName="${schemaName}">
+            <column name="customer_id" value="1"/>
             <column name="CITY" value="Odessa"/>
             <column name="FIRST_NAME" value="Ivan"/>
             <column name="LAST_NAME" value="Ivanko"/>
             <column name="PHONE_NUMBER" value="+380503355511"/>
             <column name="COUNTRY" value="Ukraine"/>
         </insert>
-        <insert tableName="CUSTOMER">
+        <insert tableName="A_CUSTOMER"  schemaName="${schemaName}">
+            <column name="customer_id" value="2"/>
             <column name="CITY" value="Moscow"/>
             <column name="FIRST_NAME" value="Anna"/>
             <column name="LAST_NAME" value="Petrova"/>
             <column name="PHONE_NUMBER" value="+7503355522"/>
             <column name="COUNTRY" value="Russia"/>
         </insert>
-        <insert tableName="CUSTOMER">
+        <insert tableName="A_CUSTOMER"  schemaName="${schemaName}">
+            <column name="customer_id" value="3"/>
             <column name="CITY" value="Hamburg"/>
             <column name="FIRST_NAME" value="Max"/>
             <column name="LAST_NAME" value="Mustermann"/>
@@ -42,37 +45,38 @@
             <column name="COUNTRY" value="Germany"/>
         </insert>
 
-        <insert tableName="MANUFACTURER">
+        <insert tableName="MANUFACTURER"  schemaName="${schemaName}">
             <column name="manufacturer_id" value="1"/>
             <column name="NAME" value="BMW"/>
         </insert>
-        <insert tableName="MANUFACTURER">
+        <insert tableName="MANUFACTURER"  schemaName="${schemaName}">
             <column name="manufacturer_id" value="2"/>
             <column name="NAME" value="MAN"/>
         </insert>
-        <insert tableName="MANUFACTURER">
+        <insert tableName="MANUFACTURER"  schemaName="${schemaName}">
             <column name="manufacturer_id" value="3"/>
             <column name="NAME" value="Ford"/>
         </insert>
 
-        <insert tableName="TYPE">
+        <insert tableName="A_TYPE"  schemaName="${schemaName}">
             <column name="type_id" value="1"/>
             <column name="NAME" value="City-car"/>
         </insert>
-        <insert tableName="TYPE">
+        <insert tableName="A_TYPE"  schemaName="${schemaName}">
             <column name="type_id" value="2"/>
             <column name="NAME" value="Trucker"/>
         </insert>
-        <insert tableName="TYPE">
+        <insert tableName="A_TYPE"  schemaName="${schemaName}">
             <column name="type_id" value="3"/>
             <column name="NAME" value="Coupe"/>
         </insert>
-        <insert tableName="TYPE">
+        <insert tableName="A_TYPE"  schemaName="${schemaName}">
             <column name="type_id" value="4"/>
             <column name="NAME" value="Hatchback"/>
         </insert>
 
-        <insert tableName="VEHICLE">
+        <insert tableName="VEHICLE"  schemaName="${schemaName}">
+            <column name="vehicle_id" value="1"/>
             <column name="COLOR" value="BLACK"/>
             <column name="MODEL" value="X5"/>
             <column name="POWER" value="150"/>
@@ -83,7 +87,8 @@
             <column name="drive_type" value="4x4"/>
             <column name="price" value="24900"/>
         </insert>
-        <insert tableName="VEHICLE">
+        <insert tableName="VEHICLE"  schemaName="${schemaName}">
+            <column name="vehicle_id" value="2"/>
             <column name="COLOR" value="WHITE"/>
             <column name="MODEL" value="X3"/>
             <column name="POWER" value="120"/>
@@ -94,7 +99,8 @@
             <column name="drive_type" value="4x4"/>
             <column name="price" value="20900"/>
         </insert>
-        <insert tableName="VEHICLE">
+        <insert tableName="VEHICLE"  schemaName="${schemaName}">
+            <column name="vehicle_id" value="3"/>
             <column name="COLOR" value="BLACK"/>
             <column name="MODEL" value="Focus"/>
             <column name="POWER" value="120"/>

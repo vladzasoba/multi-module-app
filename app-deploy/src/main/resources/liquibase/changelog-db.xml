@@ -10,7 +10,7 @@
     <property name="author" value="stud-vzasoba"/>
     <property name="id" value="stud-vzasoba"/>
     <property name="schemaName" value="public" dbms="h2"/>
-    <property name="schemaName" value="public" dbms="oracle"/>
+    <property name="schemaName" value="STUD_VZASOBA" dbms="oracle"/>
     <property name="schemaName" value="" dbms="mysql"/>
     <property name="datetime.type" value="DATETIME" dbms="oracle"/>
     <property name="datetime.type" value="DATETIME" dbms="mysql"/>
@@ -23,35 +23,35 @@
     <changeSet author="${author}" id="${id}">
 
 
-        <createTable tableName="BODY_TYPE">
+        <createTable tableName="BODY_TYPE" schemaName="${schemaName}">
             <column name="body_type_id" type="INT">
-                <constraints primaryKey="true"/>
+                <!--<constraints primaryKey="true"/>-->
             </column>
             <column name="name" type="VARCHAR(100)"/>
         </createTable>
-        <addAutoIncrement tableName="BODY_TYPE"
-                          columnName="body_type_id"
-                          incrementBy="1"
-                          schemaName="${schemaName}"
-                          startWith="1"
-                          columnDataType="INT"/>
+        <!--<addAutoIncrement tableName="BODY_TYPE"-->
+                          <!--columnName="body_type_id"-->
+                          <!--incrementBy="1"-->
+                          <!--schemaName="${schemaName}"-->
+                          <!--startWith="1"-->
+                          <!--columnDataType="INT"/>-->
 
-        <createTable tableName="CATEGORY">
+        <createTable tableName="CATEGORY" schemaName="${schemaName}">
             <column name="category_id" type="INT">
-                <constraints primaryKey="true"/>
+                <!--<constraints primaryKey="true"/>-->
             </column>
             <column name="name" type="VARCHAR(100)"/>
         </createTable>
-        <addAutoIncrement tableName="CATEGORY"
-                          columnName="category_id"
-                          incrementBy="1"
-                          schemaName="${schemaName}"
-                          startWith="1"
-                          columnDataType="INT"/>
+        <!--<addAutoIncrement tableName="CATEGORY"-->
+                          <!--columnName="category_id"-->
+                          <!--incrementBy="1"-->
+                          <!--schemaName="${schemaName}"-->
+                          <!--startWith="1"-->
+                          <!--columnDataType="INT"/>-->
 
-        <createTable tableName="CUSTOMER">
+        <createTable tableName="A_CUSTOMER" schemaName="${schemaName}">
             <column name="customer_id" type="INT">
-                <constraints primaryKey="true"/>
+                <!--<constraints primaryKey="true"/>-->
             </column>
             <column name="city" type="VARCHAR(100)"/>
             <column name="country" type="VARCHAR(100)"/>
@@ -59,55 +59,60 @@
             <column name="last_name" type="VARCHAR(100)"/>
             <column name="phone_number" type="VARCHAR(100)"/>
         </createTable>
-        <addAutoIncrement tableName="CUSTOMER"
-                          columnName="customer_id"
-                          incrementBy="1"
-                          schemaName="${schemaName}"
-                          startWith="1"
-                          columnDataType="INT"/>
+        <!--<addAutoIncrement tableName="CUSTOMER"-->
+                          <!--columnName="customer_id"-->
+                          <!--incrementBy="1"-->
+                          <!--schemaName="${schemaName}"-->
+                          <!--startWith="1"-->
+                          <!--columnDataType="INT"/>-->
 
-        <createTable tableName="MANUFACTURER">
+        <createTable tableName="MANUFACTURER" schemaName="${schemaName}">
             <column name="manufacturer_id" type="INT">
-                <constraints primaryKey="true"/>
+                <!--<constraints primaryKey="true"/>-->
             </column>
             <column name="name" type="VARCHAR(100)"/>
         </createTable>
-        <addAutoIncrement tableName="CUSTOMER"
-                          columnName="customer_id"
-                          incrementBy="1"
-                          schemaName="${schemaName}"
-                          startWith="1"
-                          columnDataType="INT"/>
+        <!--<addAutoIncrement tableName="CUSTOMER"-->
+                          <!--columnName="customer_id"-->
+                          <!--incrementBy="1"-->
+                          <!--schemaName="${schemaName}"-->
+                          <!--startWith="1"-->
+                          <!--columnDataType="INT"/>-->
 
-        <createTable tableName="ORDER">
+        <createTable tableName="AN_ORDER" schemaName="${schemaName}">
             <column name="order_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
             <column name="order_date" type="${datetime.type}"/>
+            <column name="customer_id" type="INT">
+                <!--<constraints foreignKeyName="fk_customer_id"-->
+                             <!--referencedColumnNames="customer_id"-->
+                             <!--referencedTableName="A_CUSTOMER"/>-->
+            </column>
         </createTable>
-        <addAutoIncrement tableName="ORDER"
-                          columnName="order_id"
-                          incrementBy="1"
-                          schemaName="${schemaName}"
-                          startWith="1"
-                          columnDataType="INT"/>
+        <!--<addAutoIncrement tableName="ORDER"-->
+                          <!--columnName="order_id"-->
+                          <!--incrementBy="1"-->
+                          <!--schemaName="${schemaName}"-->
+                          <!--startWith="1"-->
+                          <!--columnDataType="INT"/>-->
 
-        <createTable tableName="TYPE">
+        <createTable tableName="A_TYPE" schemaName="${schemaName}">
             <column name="type_id" type="INT">
-                <constraints primaryKey="true"/>
+                <!--<constraints primaryKey="true"/>-->
             </column>
             <column name="name" type="VARCHAR(100)"/>
         </createTable>
-        <addAutoIncrement tableName="TYPE"
-                          columnName="type_id"
-                          incrementBy="1"
-                          schemaName="${schemaName}"
-                          startWith="1"
-                          columnDataType="INT"/>
+        <!--<addAutoIncrement tableName="TYPE"-->
+                          <!--columnName="type_id"-->
+                          <!--incrementBy="1"-->
+                          <!--schemaName="${schemaName}"-->
+                          <!--startWith="1"-->
+                          <!--columnDataType="INT"/>-->
 
-        <createTable tableName="VEHICLE">
+        <createTable tableName="VEHICLE" schemaName="${schemaName}">
             <column name="vehicle_id" type="INT">
-                <constraints primaryKey="true"/>
+                <!--<constraints primaryKey="true"/>-->
             </column>
             <column name="COLOR" type="VARCHAR(20)"/>
             <column name="MODEL" type="VARCHAR(50)"/>
@@ -116,32 +121,32 @@
             <column name="YEAR" type="INT"/>
             <column name="DRIVE_TYPE" type="VARCHAR(20)"/>
             <column name="BODY_TYPE_ID" type="INT">
-                <constraints foreignKeyName="fk_body_type_id"
-                             referencedColumnNames="body_type_id"
-                             referencedTableName="BODY_TYPE"/>
+                <!--<constraints foreignKeyName="fk_body_type_id"-->
+                             <!--referencedColumnNames="body_type_id"-->
+                             <!--referencedTableName="BODY_TYPE"/>-->
             </column>
             <column name="TYPE_ID" type="INT">
-                <constraints foreignKeyName="fk_type_id"
-                             referencedColumnNames="type_id"
-                             referencedTableName="TYPE"/>
+                <!--<constraints foreignKeyName="fk_type_id"-->
+                             <!--referencedColumnNames="type_id"-->
+                             <!--referencedTableName="A_TYPE"/>-->
             </column>
             <column name="category_id" type="INT">
-                <constraints foreignKeyName="fk_category_id"
-                             referencedColumnNames="category_id"
-                             referencedTableName="CATEGORY"/>
+                <!--<constraints foreignKeyName="fk_category_id"-->
+                             <!--referencedColumnNames="category_id"-->
+                             <!--referencedTableName="CATEGORY"/>-->
             </column>
             <column name="manufacturer_id" type="INT">
-                <constraints foreignKeyName="fk_manufacturer_id"
-                             referencedColumnNames="manufacturer_id"
-                             referencedTableName="MANUFACTURER"/>
+                <!--<constraints foreignKeyName="fk_manufacturer_id"-->
+                             <!--referencedColumnNames="manufacturer_id"-->
+                             <!--referencedTableName="MANUFACTURER"/>-->
             </column>
         </createTable>
-        <addAutoIncrement tableName="VEHICLE"
-                          columnName="vehicle_id"
-                          incrementBy="1"
-                          schemaName="${schemaName}"
-                          startWith="1"
-                          columnDataType="INT"/>
+        <!--<addAutoIncrement tableName="VEHICLE"-->
+                          <!--columnName="vehicle_id"-->
+                          <!--incrementBy="1"-->
+                          <!--schemaName="${schemaName}"-->
+                          <!--startWith="1"-->
+                          <!--columnDataType="INT"/>-->
 
         <!--<createTable tableName="CAR">-->
             <!--<column name="vehicle_id" type="INT">-->
@@ -173,27 +178,27 @@
             <!--</column>-->
         <!--</createTable>-->
 
-        <createTable tableName="VEHICLE_TO_ORDER">
+        <createTable tableName="VEHICLE_TO_ORDER" schemaName="${schemaName}">
             <column name="vehicle_to_order_id" type="INT">
-                <constraints primaryKey="true"/>
+                <!--<constraints primaryKey="true"/>-->
             </column>
             <column name="order_id" type="INT">
-                <constraints foreignKeyName="fk_order_id"
-                             referencedColumnNames="order_id"
-                             referencedTableName="ORDER"/>
+                <!--<constraints foreignKeyName="fk_order_id"-->
+                             <!--referencedColumnNames="order_id"-->
+                             <!--referencedTableName="AN_ORDER"/>-->
             </column>
             <column name="vehicle_id" type="INT">
-                <constraints foreignKeyName="fk_cto_vehicle_id"
-                             referencedColumnNames="vehicle_id"
-                             referencedTableName="VEHICLE"/>
+                <!--<constraints foreignKeyName="fk_cto_vehicle_id"-->
+                             <!--referencedColumnNames="vehicle_id"-->
+                             <!--referencedTableName="VEHICLE"/>-->
             </column>
         </createTable>
-        <addAutoIncrement tableName="VEHICLE_TO_ORDER"
-                          columnName="vehicle_to_order_id"
-                          incrementBy="1"
-                          schemaName="${schemaName}"
-                          startWith="1"
-                          columnDataType="INT"/>
+        <!--<addAutoIncrement tableName="VEHICLE_TO_ORDER"-->
+                          <!--columnName="vehicle_to_order_id"-->
+                          <!--incrementBy="1"-->
+                          <!--schemaName="${schemaName}"-->
+                          <!--startWith="1"-->
+                          <!--columnDataType="INT"/>-->
     </changeSet>
 
 </databaseChangeLog>

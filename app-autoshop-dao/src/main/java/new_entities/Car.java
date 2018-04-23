@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue(value = "1")
+@Table(name = "VEHICLE", schema = "STUD_VZASOBA")
 public class Car extends Vehicle {
     @Basic
     @Column(name = "DRIVE_TYPE", nullable = true, length = 20)

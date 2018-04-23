@@ -10,6 +10,7 @@
     <title>#{welcome.welcomeMessage}</title>
 </head>
 <body>
+
 <h:form>
     <p:dataScroller value="#{productList.vehicles}" var="vehicle" chunkSize="10">
         <f:facet name="header">
@@ -28,6 +29,12 @@
 
                     <h:outputText value="Color:" />
                     <h:outputText value="#{vehicle.color}" style="font-weight: bold"/>
+
+                    <h:outputText value="Brand:" />
+                    <h:outputText value="#{vehicle.manufacturerByManufacturerId.name}" style="font-weight: bold"/>
+
+                    <h:outputText value="Price:" />
+                    <h:outputText value="#{vehicle.price}$" style="font-weight: bold"/>
                 </h:panelGrid>
             </p:outputPanel>
         </h:panelGrid>

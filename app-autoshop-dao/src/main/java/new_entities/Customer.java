@@ -1,12 +1,10 @@
 package new_entities;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
+@Table(name = "A_CUSTOMER", schema = "STUD_VZASOBA")
 public class Customer {
     @Id
     @Column(name = "customer_id", nullable = false)
